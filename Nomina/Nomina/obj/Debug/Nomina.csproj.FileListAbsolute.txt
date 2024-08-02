@@ -9,3 +9,14 @@ C:\Users\josea\source\repos\Nomina\Nomina\obj\Debug\Nomina.csproj.CoreCompileInp
 C:\Users\josea\source\repos\Nomina\Nomina\obj\Debug\Nomina.exe
 C:\Users\josea\source\repos\Nomina\Nomina\obj\Debug\Nomina.pdb
 C:\Users\josea\source\repos\Nomina\Nomina\obj\Debug\Nomina.Form2.resources
+C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\bin\Debug\Nomina.exe.config
+C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\bin\Debug\Nomina.exe
+C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\bin\Debug\Nomina.pdb
+C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.AssemblyReference.cache
+C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Form1.resources
+C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Form2.resources
+C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Properties.Resources.resources
+C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.GenerateResource.cache
+C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.CoreCompileInputs.cache
+C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.exe
+C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.pdb
