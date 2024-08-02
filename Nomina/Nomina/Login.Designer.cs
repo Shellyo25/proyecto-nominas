@@ -89,9 +89,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(149, 171);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 20);
+            this.label1.Size = new System.Drawing.Size(61, 20);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Correo";
+            this.label1.Text = "Usuario";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label2
@@ -120,7 +120,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Location = new System.Drawing.Point(251, 240);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(162, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(173, 17);
             this.linkLabel1.TabIndex = 8;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "¿Olvidaste la contraseña?";
