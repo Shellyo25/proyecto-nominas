@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Nomina
 {
-    public partial class Form2 : Form
+    public partial class Empleados : Form
     {
-        public Form2()
+        public Empleados()
         {
             InitializeComponent();
         }
@@ -22,12 +22,7 @@ namespace Nomina
 
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }

@@ -20,3 +20,15 @@ C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.
 C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.CoreCompileInputs.cache
 C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.exe
 C:\Users\gerar\Documents\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.pdb
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\bin\Debug\Nomina.exe.config
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\bin\Debug\Nomina.exe
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\bin\Debug\Nomina.pdb
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.AssemblyReference.cache
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Form1.resources
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Planilla.resources
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Form2.resources
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Properties.Resources.resources
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.GenerateResource.cache
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.CoreCompileInputs.cache
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.exe
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.pdb
