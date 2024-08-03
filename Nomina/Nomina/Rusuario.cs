@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace Nomina
 {
-    public partial class Form2 : Form
+    public partial class Rusuario : Form
     {
-        public Form2()
+        public Rusuario()
         {
             InitializeComponent();
         }
 
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
 
         }
