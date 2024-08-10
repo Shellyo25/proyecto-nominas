@@ -31,7 +31,7 @@ namespace Nomina
                     MessageBox.Show(respuesta, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 } else
                 {
-                    frmRegistro frm = new frmRegistro();
+                    MENU frm = new MENU();
                     frm.Visible = true;
                     this.Visible = false;
                 }

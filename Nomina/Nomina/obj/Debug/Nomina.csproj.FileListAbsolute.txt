@@ -24,9 +24,7 @@ C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\bin\D
 C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\bin\Debug\Nomina.exe
 C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\bin\Debug\Nomina.pdb
 C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.AssemblyReference.cache
-C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Form1.resources
 C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Planilla.resources
-C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Form2.resources
 C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Properties.Resources.resources
 C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.GenerateResource.cache
 C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.CoreCompileInputs.cache
@@ -52,3 +50,14 @@ C:\pynomina\proyecto-nominas\Nomina\Nomina\bin\Debug\MySql.Data.xml
 C:\pynomina\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.FrmLogin.resources
 C:\pynomina\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.frmRegistro.resources
 C:\pynomina\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.CopyComplete
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\bin\Debug\MySql.Data.xml
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Empleados.resources
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.FrmLogin.resources
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.ConsultaEmpleads.resources
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.frmRegistro.resources
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.UsuarioRegistrados.resources
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.CopyComplete
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.MENU.resources
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Horas_trabajadas.resources
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.PlanillasRegistradas.resources
+C:\Users\maris\OneDrive\Escritorio\proyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Recibo.resources
