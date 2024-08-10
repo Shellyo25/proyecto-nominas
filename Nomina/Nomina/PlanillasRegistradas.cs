@@ -11,30 +11,20 @@ using MySql.Data.MySqlClient;
 
 namespace Nomina
 {
-    public partial class ConsultaEmpleads : Form
+    public partial class PlanillasRegistradas : Form
     {
-        public ConsultaEmpleads()
+        public PlanillasRegistradas()
         {
             InitializeComponent();
         }
         MySqlConnection cn = Conexion.getConexion();
-
-        private void ConsultaEmpleados_Load(object sender, EventArgs e)
+        private void PlanillasRegistradas_Load(object sender, EventArgs e)
         {
-            String consulta = "select * from empleados";
+            String consulta = "select * from planillas";
             MySqlDataAdapter adaptador = new MySqlDataAdapter(consulta, cn);
             DataTable dt = new DataTable();
             adaptador.Fill(dt);
             dataGridView1.DataSource = dt;
         }
-
-        private void MENU_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            MENU menu = new MENU();
-            menu.Show();
-            this.Hide();
-        }
     }
 }
-
-//Shelly Ordoñez

@@ -66,6 +66,8 @@ namespace Nomina
             }
             return respuesta;
         }
+
+        
         private string generarSHA1(string cadena)
         {
             UTF8Encoding enc = new UTF8Encoding();

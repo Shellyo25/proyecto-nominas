@@ -1,7 +1,7 @@
 ﻿
 namespace Nomina
 {
-    partial class NominasRegistradass
+    partial class PlanillasRegistradas
     {
         /// <summary>
         /// Required designer variable.
@@ -54,15 +54,15 @@ namespace Nomina
             this.dataGridView1.Size = new System.Drawing.Size(682, 214);
             this.dataGridView1.TabIndex = 1;
             // 
-            // NominasRegistradass
+            // PlanillasRegistradas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Name = "NominasRegistradass";
-            this.Text = "NominasRegistradass";
+            this.Name = "PlanillasRegistradas";
+            this.Load += new System.EventHandler(this.PlanillasRegistradas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
