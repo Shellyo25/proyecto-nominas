@@ -42,6 +42,7 @@ namespace Nomina
             this.txtConPassword = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.MENU = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -146,13 +147,25 @@ namespace Nomina
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(27, 19);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(139, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(776, 48);
+            this.label3.Size = new System.Drawing.Size(581, 36);
             this.label3.TabIndex = 17;
             this.label3.Text = "PROCESO DE REGISTRO DE USUARIO";
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // MENU
+            // 
+            this.MENU.AutoSize = true;
+            this.MENU.Location = new System.Drawing.Point(745, 19);
+            this.MENU.Name = "MENU";
+            this.MENU.Size = new System.Drawing.Size(48, 17);
+            this.MENU.TabIndex = 32;
+            this.MENU.TabStop = true;
+            this.MENU.Text = "MENU";
+            this.MENU.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MENU.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.MENU_LinkClicked);
             // 
             // frmRegistro
             // 
@@ -160,6 +173,7 @@ namespace Nomina
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(825, 417);
+            this.Controls.Add(this.MENU);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtConPassword);
@@ -195,5 +209,6 @@ namespace Nomina
         private System.Windows.Forms.TextBox txtConPassword;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel MENU;
     }
 }

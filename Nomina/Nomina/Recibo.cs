@@ -10,26 +10,25 @@ using System.Windows.Forms;
 
 namespace Nomina
 {
-    public partial class Form2 : Form
+    public partial class Recibo : Form
     {
-        public Form2()
+        public Recibo()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void MENU_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            MENU menu = new MENU();
+            menu.Show();
+            this.Hide();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        private void Recibo_Load(object sender, EventArgs e)
         {
 
         }
     }
 }
+
+//Shelly Ordoñez

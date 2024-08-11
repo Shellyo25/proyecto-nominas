@@ -65,5 +65,12 @@ namespace Nomina
         {
 
         }
+
+        private void MENU_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MENU menu = new MENU();
+            menu.Show();
+            this.Hide();
+        }
     }
 }

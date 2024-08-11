@@ -29,6 +29,7 @@ namespace Nomina
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,16 +40,31 @@ namespace Nomina
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.txtCod = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtSalario = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtDepto = new System.Windows.Forms.TextBox();
+            this.txtPuesto = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cbbSexo = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dtFecha = new System.Windows.Forms.DateTimePicker();
+            this.btGuardar = new System.Windows.Forms.Button();
+            this.btActualizar = new System.Windows.Forms.Button();
+            this.btEliminar = new System.Windows.Forms.Button();
+            this.btSalir = new System.Windows.Forms.Button();
+            this.MENU = new System.Windows.Forms.LinkLabel();
+            this.empleadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.empleadosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empleadosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empleadosBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -82,7 +98,7 @@ namespace Nomina
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 166);
+            this.label4.Location = new System.Drawing.Point(31, 206);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 17);
             this.label4.TabIndex = 3;
@@ -91,7 +107,7 @@ namespace Nomina
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 206);
+            this.label5.Location = new System.Drawing.Point(504, 56);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 17);
             this.label5.TabIndex = 4;
@@ -109,7 +125,7 @@ namespace Nomina
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(32, 291);
+            this.label7.Location = new System.Drawing.Point(509, 206);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 17);
             this.label7.TabIndex = 6;
@@ -118,17 +134,17 @@ namespace Nomina
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(436, 56);
+            this.label8.Location = new System.Drawing.Point(467, 93);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 17);
+            this.label8.Size = new System.Drawing.Size(102, 17);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Departamento";
+            this.label8.Text = "Departamento:";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(437, 91);
+            this.label9.Location = new System.Drawing.Point(468, 128);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 17);
             this.label9.TabIndex = 8;
@@ -137,99 +153,232 @@ namespace Nomina
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(436, 128);
+            this.label10.Location = new System.Drawing.Point(509, 168);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 17);
             this.label10.TabIndex = 9;
             this.label10.Text = "Salario";
             // 
-            // textBox1
+            // txtCod
             // 
-            this.textBox1.Location = new System.Drawing.Point(114, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(134, 22);
-            this.textBox1.TabIndex = 10;
+            this.txtCod.Location = new System.Drawing.Point(114, 56);
+            this.txtCod.Name = "txtCod";
+            this.txtCod.Size = new System.Drawing.Size(134, 22);
+            this.txtCod.TabIndex = 10;
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(114, 87);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(295, 22);
-            this.textBox2.TabIndex = 11;
+            this.txtNombre.Location = new System.Drawing.Point(114, 87);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(295, 22);
+            this.txtNombre.TabIndex = 11;
             // 
-            // textBox3
+            // txtApellido
             // 
-            this.textBox3.Location = new System.Drawing.Point(114, 125);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(295, 22);
-            this.textBox3.TabIndex = 12;
+            this.txtApellido.Location = new System.Drawing.Point(114, 125);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(295, 22);
+            this.txtApellido.TabIndex = 12;
             // 
-            // textBox4
+            // txtTelefono
             // 
-            this.textBox4.Location = new System.Drawing.Point(114, 166);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(295, 22);
-            this.textBox4.TabIndex = 13;
+            this.txtTelefono.Location = new System.Drawing.Point(114, 206);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(295, 22);
+            this.txtTelefono.TabIndex = 14;
             // 
-            // textBox5
+            // txtDireccion
             // 
-            this.textBox5.Location = new System.Drawing.Point(114, 206);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(295, 22);
-            this.textBox5.TabIndex = 14;
+            this.txtDireccion.Location = new System.Drawing.Point(114, 244);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(295, 22);
+            this.txtDireccion.TabIndex = 15;
             // 
-            // textBox6
+            // txtSalario
             // 
-            this.textBox6.Location = new System.Drawing.Point(114, 244);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(295, 22);
-            this.textBox6.TabIndex = 15;
+            this.txtSalario.Location = new System.Drawing.Point(576, 165);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(295, 22);
+            this.txtSalario.TabIndex = 17;
             // 
-            // textBox7
+            // txtEmail
             // 
-            this.textBox7.Location = new System.Drawing.Point(545, 91);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(295, 22);
-            this.textBox7.TabIndex = 16;
+            this.txtEmail.Location = new System.Drawing.Point(576, 56);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(295, 22);
+            this.txtEmail.TabIndex = 18;
             // 
-            // textBox8
+            // txtDepto
             // 
-            this.textBox8.Location = new System.Drawing.Point(545, 128);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(295, 22);
-            this.textBox8.TabIndex = 17;
+            this.txtDepto.Location = new System.Drawing.Point(576, 93);
+            this.txtDepto.Name = "txtDepto";
+            this.txtDepto.Size = new System.Drawing.Size(295, 22);
+            this.txtDepto.TabIndex = 19;
             // 
-            // comboBox1
+            // txtPuesto
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(114, 282);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(166, 24);
-            this.comboBox1.TabIndex = 18;
+            this.txtPuesto.Location = new System.Drawing.Point(576, 206);
+            this.txtPuesto.Name = "txtPuesto";
+            this.txtPuesto.Size = new System.Drawing.Size(295, 22);
+            this.txtPuesto.TabIndex = 20;
             // 
-            // comboBox2
+            // label11
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(545, 49);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(166, 24);
-            this.comboBox2.TabIndex = 19;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(49, 169);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(43, 17);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Sexo:";
+            // 
+            // cbbSexo
+            // 
+            this.cbbSexo.FormattingEnabled = true;
+            this.cbbSexo.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
+            this.cbbSexo.Location = new System.Drawing.Point(114, 160);
+            this.cbbSexo.Name = "cbbSexo";
+            this.cbbSexo.Size = new System.Drawing.Size(121, 24);
+            this.cbbSexo.TabIndex = 22;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(65, 349);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(1029, 171);
+            this.dataGridView1.TabIndex = 23;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(478, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(168, 17);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "INGRESAR EMPLEADOS";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(437, 316);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(197, 17);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "EMPLEADOS REGISTRADOS";
+            // 
+            // dtFecha
+            // 
+            this.dtFecha.Location = new System.Drawing.Point(577, 128);
+            this.dtFecha.Name = "dtFecha";
+            this.dtFecha.Size = new System.Drawing.Size(294, 22);
+            this.dtFecha.TabIndex = 26;
+            // 
+            // btGuardar
+            // 
+            this.btGuardar.BackColor = System.Drawing.Color.Green;
+            this.btGuardar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGuardar.ForeColor = System.Drawing.Color.White;
+            this.btGuardar.Location = new System.Drawing.Point(985, 49);
+            this.btGuardar.Name = "btGuardar";
+            this.btGuardar.Size = new System.Drawing.Size(147, 52);
+            this.btGuardar.TabIndex = 27;
+            this.btGuardar.Text = "GUARDAR";
+            this.btGuardar.UseVisualStyleBackColor = false;
+            this.btGuardar.Click += new System.EventHandler(this.btGuardar_Click);
+            // 
+            // btActualizar
+            // 
+            this.btActualizar.BackColor = System.Drawing.Color.Teal;
+            this.btActualizar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btActualizar.ForeColor = System.Drawing.Color.White;
+            this.btActualizar.Location = new System.Drawing.Point(985, 116);
+            this.btActualizar.Name = "btActualizar";
+            this.btActualizar.Size = new System.Drawing.Size(147, 52);
+            this.btActualizar.TabIndex = 28;
+            this.btActualizar.Text = "ACTUALIZAR";
+            this.btActualizar.UseVisualStyleBackColor = false;
+            this.btActualizar.Click += new System.EventHandler(this.btActualizar_Click);
+            // 
+            // btEliminar
+            // 
+            this.btEliminar.BackColor = System.Drawing.Color.Maroon;
+            this.btEliminar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEliminar.ForeColor = System.Drawing.Color.White;
+            this.btEliminar.Location = new System.Drawing.Point(985, 180);
+            this.btEliminar.Name = "btEliminar";
+            this.btEliminar.Size = new System.Drawing.Size(147, 52);
+            this.btEliminar.TabIndex = 29;
+            this.btEliminar.Text = "ELIMINAR";
+            this.btEliminar.UseVisualStyleBackColor = false;
+            this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
+            // 
+            // btSalir
+            // 
+            this.btSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btSalir.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSalir.ForeColor = System.Drawing.Color.White;
+            this.btSalir.Location = new System.Drawing.Point(985, 247);
+            this.btSalir.Name = "btSalir";
+            this.btSalir.Size = new System.Drawing.Size(147, 52);
+            this.btSalir.TabIndex = 30;
+            this.btSalir.Text = "SALIR";
+            this.btSalir.UseVisualStyleBackColor = false;
+            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
+            // 
+            // MENU
+            // 
+            this.MENU.AutoSize = true;
+            this.MENU.Location = new System.Drawing.Point(1046, 20);
+            this.MENU.Name = "MENU";
+            this.MENU.Size = new System.Drawing.Size(48, 17);
+            this.MENU.TabIndex = 33;
+            this.MENU.TabStop = true;
+            this.MENU.Text = "MENU";
+            this.MENU.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MENU.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.MENU_LinkClicked_1);
+            // 
+            // empleadosBindingSource
+            // 
+            this.empleadosBindingSource.DataSource = typeof(Nomina.Empleados);
+            // 
+            // empleadosBindingSource1
+            // 
+            this.empleadosBindingSource1.DataSource = typeof(Nomina.Empleados);
+            this.empleadosBindingSource1.CurrentChanged += new System.EventHandler(this.empleadosBindingSource1_CurrentChanged);
             // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1053, 384);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1179, 549);
+            this.Controls.Add(this.MENU);
+            this.Controls.Add(this.btSalir);
+            this.Controls.Add(this.btEliminar);
+            this.Controls.Add(this.btActualizar);
+            this.Controls.Add(this.btGuardar);
+            this.Controls.Add(this.dtFecha);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.cbbSexo);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtPuesto);
+            this.Controls.Add(this.txtDepto);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtSalario);
+            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCod);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -242,6 +391,10 @@ namespace Nomina
             this.Controls.Add(this.label1);
             this.Name = "Empleados";
             this.Text = "Empleados";
+            this.Load += new System.EventHandler(this.Empleados_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empleadosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empleadosBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,15 +412,27 @@ namespace Nomina
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox txtCod;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtSalario;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtDepto;
+        private System.Windows.Forms.TextBox txtPuesto;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cbbSexo;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DateTimePicker dtFecha;
+        private System.Windows.Forms.Button btGuardar;
+        private System.Windows.Forms.Button btActualizar;
+        private System.Windows.Forms.Button btEliminar;
+        private System.Windows.Forms.Button btSalir;
+        private System.Windows.Forms.LinkLabel MENU;
+        private System.Windows.Forms.BindingSource empleadosBindingSource;
+        private System.Windows.Forms.BindingSource empleadosBindingSource1;
     }
 }
