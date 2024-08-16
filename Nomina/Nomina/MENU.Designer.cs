@@ -37,6 +37,7 @@ namespace Nomina
             this.btConsultaE = new System.Windows.Forms.Button();
             this.btSalir = new System.Windows.Forms.Button();
             this.btnHoras = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btEmpleados
@@ -127,12 +128,24 @@ namespace Nomina
             this.btnHoras.UseVisualStyleBackColor = true;
             this.btnHoras.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(584, 238);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(138, 49);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "PERMISOS";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MENU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btSalir);
             this.Controls.Add(this.btnHoras);
             this.Controls.Add(this.btConsultaE);
@@ -158,5 +171,6 @@ namespace Nomina
         private System.Windows.Forms.Button btConsultaE;
         private System.Windows.Forms.Button btSalir;
         private System.Windows.Forms.Button btnHoras;
+        private System.Windows.Forms.Button button1;
     }
 }

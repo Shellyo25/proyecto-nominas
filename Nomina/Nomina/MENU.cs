@@ -76,6 +76,13 @@ namespace Nomina
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Permisos frm = new Permisos();
+            frm.Visible = true;
+            this.Visible = false;
+        }
     }
 }
 

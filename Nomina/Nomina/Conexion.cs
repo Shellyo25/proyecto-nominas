@@ -12,7 +12,7 @@ namespace Nomina
         public static MySqlConnection getConexion()
         {
             string servidor = "localhost";
-            string puerto = "3307";
+            string puerto = "3306";
             string usuario = "root";
             string password = "";
             string bd = "nomina";
