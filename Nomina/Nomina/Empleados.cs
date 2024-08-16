@@ -29,6 +29,23 @@ namespace Nomina
 
         private void btGuardar_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrWhiteSpace(txtCod.Text) ||
+                string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                string.IsNullOrWhiteSpace(txtApellido.Text) ||
+                string.IsNullOrWhiteSpace(txtTelefono.Text) ||
+                string.IsNullOrWhiteSpace(txtDireccion.Text) ||
+                string.IsNullOrWhiteSpace(txtEmail.Text) ||
+                string.IsNullOrWhiteSpace(txtDepto.Text) ||
+                string.IsNullOrWhiteSpace(txtSalario.Text) ||
+                string.IsNullOrWhiteSpace(txtPuesto.Text) ||
+                cbbSexo.SelectedItem == null ||
+                dtFecha.Value == null)
+            {
+                MessageBox.Show("Por favor, complete todos los campos antes de guardar.");
+                return;
+            }
+
             try
             {
                 cn.Open();
