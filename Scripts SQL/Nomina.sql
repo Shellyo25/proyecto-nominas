@@ -1,3 +1,4 @@
+CREATE DATABASE nomina;
 USE nomina;
 SET FOREIGN_KEY_CHECKS=0;
 SET GLOBAL FOREIGN_KEY_CHECKS=0;
@@ -33,16 +34,18 @@ CREATE TABLE empleados (
 CREATE TABLE Hrs_trabajadas (
     IDHrs INT AUTO_INCREMENT PRIMARY KEY,
     IDEmpls INT ,
-    Fecha VARCHAR(50) NOT NULL UNIQUE,
+    NombreEmpl VARCHAR(255),
+    Fecha VARCHAR(50) NOT NULL,
     HrsDiarias INT(2) NOT NULL,
-    TtlDvngdo DECIMAL(5,2) NOT NULL,
-    HrsExtra INT(2) NOT NULL,
-    SlrioDiario DECIMAL(5,2) NOT NULL,
     DiasLbrds INT(3) NOT NULL,
-    SlrioMensual DECIMAL(5,2) NOT NULL,
-    SlrioExtra DECIMAL(5,2) NOT NULL,
+    SlrioMensual DECIMAL(10,2) NOT NULL,
+	SlrioDiario DECIMAL(10,2) NOT NULL,
+    HrsExtra INT(2) NOT NULL,
+    SlrioExtra DECIMAL(10,2) NOT NULL,
+    TtlDvngdo DECIMAL(10,2) NOT NULL,    
     FOREIGN KEY (IDEmpls) REFERENCES empleados(ID_empleado)
 );
 
-SELECT * FROM empleados;
-DROP TABLE empleados;
+ 
+DROP table Hrs_trabajadas;
+select * from hrs_trabajadas;

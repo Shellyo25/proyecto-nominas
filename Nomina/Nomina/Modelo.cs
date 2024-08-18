@@ -19,7 +19,7 @@ namespace Nomina
             comando.Parameters.AddWithValue("@usuario", usuario.Usuario);
             comando.Parameters.AddWithValue("@password", usuario.Password);
             comando.Parameters.AddWithValue("@nombre", usuario.Nombre);
-            comando.Parameters.AddWithValue("@id_tipo", 1);
+            comando.Parameters.AddWithValue("@id_tipo", usuario.Id_tipo);
 
             int resultado = comando.ExecuteNonQuery();
 
