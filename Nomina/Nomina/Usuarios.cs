@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Nomina
 {
-    class Usuarios
+    public class Usuarios
     {
-        int id, id_tipo;
-        string usuario, password, conPassword, nombre;
+        public static int id, id_tipo;
+        public static string usuario, password, conPassword, nombre;
 
         public string Usuario { get => usuario; set => usuario = value; }
         public string Password { get => password; set => password = value; }

@@ -58,7 +58,6 @@ namespace Nomina
             this.btGuardar = new System.Windows.Forms.Button();
             this.btActualizar = new System.Windows.Forms.Button();
             this.btEliminar = new System.Windows.Forms.Button();
-            this.btSalir = new System.Windows.Forms.Button();
             this.MENU = new System.Windows.Forms.LinkLabel();
             this.empleadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.empleadosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -320,19 +319,6 @@ namespace Nomina
             this.btEliminar.UseVisualStyleBackColor = false;
             this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
-            // btSalir
-            // 
-            this.btSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btSalir.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSalir.ForeColor = System.Drawing.Color.White;
-            this.btSalir.Location = new System.Drawing.Point(985, 247);
-            this.btSalir.Name = "btSalir";
-            this.btSalir.Size = new System.Drawing.Size(147, 52);
-            this.btSalir.TabIndex = 30;
-            this.btSalir.Text = "SALIR";
-            this.btSalir.UseVisualStyleBackColor = false;
-            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
-            // 
             // MENU
             // 
             this.MENU.AutoSize = true;
@@ -360,7 +346,6 @@ namespace Nomina
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 549);
             this.Controls.Add(this.MENU);
-            this.Controls.Add(this.btSalir);
             this.Controls.Add(this.btEliminar);
             this.Controls.Add(this.btActualizar);
             this.Controls.Add(this.btGuardar);
@@ -430,7 +415,6 @@ namespace Nomina
         private System.Windows.Forms.Button btGuardar;
         private System.Windows.Forms.Button btActualizar;
         private System.Windows.Forms.Button btEliminar;
-        private System.Windows.Forms.Button btSalir;
         private System.Windows.Forms.LinkLabel MENU;
         private System.Windows.Forms.BindingSource empleadosBindingSource;
         private System.Windows.Forms.BindingSource empleadosBindingSource1;

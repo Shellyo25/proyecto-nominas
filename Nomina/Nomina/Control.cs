@@ -27,6 +27,7 @@ namespace Nomina
                     }else
                     {
                         usuario.Password = generarSHA1(usuario.Password);
+                        usuario.Id_tipo = 2;
                         modelo.registro(usuario);
                     }
                 }else

@@ -17,8 +17,8 @@ namespace Nomina
             string password = "";
             string bd = "nomina";
 
-            string cadenaConexion = "server=" + servidor + "; port=" + puerto + "; user id=" + usuario + "; password=" + 
-                password + "; database="+bd;
+            string cadenaConexion = "server=" + servidor + "; port=" + puerto + "; user id=" + usuario + "; password=" +
+                password + "; database=" + bd;
 
             MySqlConnection conexion = new MySqlConnection(cadenaConexion);
             return conexion;

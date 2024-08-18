@@ -187,7 +187,7 @@ namespace Nomina
             // 
             // TxtID
             // 
-            this.TxtID.Location = new System.Drawing.Point(154, 98);
+            this.TxtID.Location = new System.Drawing.Point(152, 131);
             this.TxtID.Name = "TxtID";
             this.TxtID.Size = new System.Drawing.Size(110, 22);
             this.TxtID.TabIndex = 25;
@@ -196,7 +196,7 @@ namespace Nomina
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(33, 98);
+            this.label2.Location = new System.Drawing.Point(31, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 24;
@@ -278,9 +278,9 @@ namespace Nomina
             this.btnBuscar.BackColor = System.Drawing.Color.Green;
             this.btnBuscar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(154, 134);
+            this.btnBuscar.Location = new System.Drawing.Point(285, 122);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(110, 26);
+            this.btnBuscar.Size = new System.Drawing.Size(110, 35);
             this.btnBuscar.TabIndex = 50;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;

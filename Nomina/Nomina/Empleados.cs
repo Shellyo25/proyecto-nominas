@@ -22,11 +22,6 @@ namespace Nomina
         }
         MySqlConnection cn = Conexion.getConexion();
 
-        private void btSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btGuardar_Click(object sender, EventArgs e)
         {
 
@@ -65,18 +60,8 @@ namespace Nomina
                 MessageBox.Show("r.Message+r.StackTrace");
             }
             MessageBox.Show("¡DATOS REGISTRADOS CORRECTAMENTE!");
-            txtNombre.Text = "";
-            txtApellido.Text = "";
-            cbbSexo.Text = "";
-            txtTelefono.Text = "";
-            txtDireccion.Text = "";
-            txtEmail.Text = "";
-            txtDepto.Text = "";
-            dtFecha.Text= "";
-            txtSalario.Text = "";
-            txtPuesto.Text = "";
-
             llamar_tablas();
+            limpiar_tablas();
 
         }
 
@@ -88,6 +73,7 @@ namespace Nomina
                 MySqlCommand comando = new MySqlCommand(consulta,cn);
             MessageBox.Show("¡DATOS MODIFICADOS CORRECTAMENTE!");
             llamar_tablas();
+            limpiar_tablas();
                 cn.Close();
 
             }
@@ -101,7 +87,7 @@ namespace Nomina
             cmd.ExecuteNonQuery();
             MessageBox.Show("Dato eliminado correctamente");
             llamar_tablas();
-
+            limpiar_tablas();
             cn.Close();
         
         }
@@ -113,6 +99,19 @@ namespace Nomina
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+        public void limpiar_tablas()
+        {
+            txtNombre.Text = "";
+            txtApellido.Text = "";
+            cbbSexo.Text = "";
+            txtTelefono.Text = "";
+            txtDireccion.Text = "";
+            txtEmail.Text = "";
+            txtDepto.Text = "";
+            dtFecha.Text = "";
+            txtSalario.Text = "";
+            txtPuesto.Text = "";
         }
         public void llamar_tablas()
         {
