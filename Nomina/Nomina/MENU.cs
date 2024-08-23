@@ -138,6 +138,20 @@ namespace Nomina
             frm.Visible = true;
             Usuarios r = new Usuarios();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ConsultaTotalDevengado frm = new ConsultaTotalDevengado();
+            frm.Visible = true;
+            this.Visible = false;
+        }
+
+        private void btnConDed_Click(object sender, EventArgs e)
+        {
+            ConsultaDeducciones frm = new ConsultaTotalDevengado();
+            frm.Visible = true;
+            this.Visible = false;
+        } 
     }
 }
 

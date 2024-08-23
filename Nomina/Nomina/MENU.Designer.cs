@@ -33,7 +33,6 @@ namespace Nomina
             this.btnPermisos = new System.Windows.Forms.Button();
             this.btnRoles = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btSalir = new System.Windows.Forms.Button();
@@ -44,12 +43,14 @@ namespace Nomina
             this.btRecibo = new System.Windows.Forms.Button();
             this.btUsuarios = new System.Windows.Forms.Button();
             this.btEmpleados = new System.Windows.Forms.Button();
+            this.btnConsHoras = new System.Windows.Forms.Button();
+            this.btnConDed = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDeducciones
             // 
             this.btnDeducciones.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeducciones.Location = new System.Drawing.Point(481, 156);
+            this.btnDeducciones.Location = new System.Drawing.Point(126, 362);
             this.btnDeducciones.Name = "btnDeducciones";
             this.btnDeducciones.Size = new System.Drawing.Size(137, 49);
             this.btnDeducciones.TabIndex = 29;
@@ -60,7 +61,7 @@ namespace Nomina
             // btnPermisos
             // 
             this.btnPermisos.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPermisos.Location = new System.Drawing.Point(481, 226);
+            this.btnPermisos.Location = new System.Drawing.Point(478, 232);
             this.btnPermisos.Name = "btnPermisos";
             this.btnPermisos.Size = new System.Drawing.Size(137, 49);
             this.btnPermisos.TabIndex = 28;
@@ -71,7 +72,7 @@ namespace Nomina
             // btnRoles
             // 
             this.btnRoles.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRoles.Location = new System.Drawing.Point(481, 301);
+            this.btnRoles.Location = new System.Drawing.Point(478, 302);
             this.btnRoles.Name = "btnRoles";
             this.btnRoles.Size = new System.Drawing.Size(138, 49);
             this.btnRoles.TabIndex = 27;
@@ -88,17 +89,6 @@ namespace Nomina
             this.label2.Size = new System.Drawing.Size(159, 19);
             this.label2.TabIndex = 26;
             this.label2.Text = "Nombre de Usuario:";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(294, 292);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 49);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "CONSULTA DE PLANILLAS";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtNombre
             // 
@@ -120,7 +110,7 @@ namespace Nomina
             // btSalir
             // 
             this.btSalir.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSalir.Location = new System.Drawing.Point(556, 76);
+            this.btSalir.Location = new System.Drawing.Point(548, 432);
             this.btSalir.Name = "btSalir";
             this.btSalir.Size = new System.Drawing.Size(138, 49);
             this.btSalir.TabIndex = 22;
@@ -131,7 +121,7 @@ namespace Nomina
             // btnHoras
             // 
             this.btnHoras.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoras.Location = new System.Drawing.Point(110, 367);
+            this.btnHoras.Location = new System.Drawing.Point(126, 293);
             this.btnHoras.Name = "btnHoras";
             this.btnHoras.Size = new System.Drawing.Size(137, 49);
             this.btnHoras.TabIndex = 21;
@@ -142,7 +132,7 @@ namespace Nomina
             // btConsultaE
             // 
             this.btConsultaE.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsultaE.Location = new System.Drawing.Point(294, 367);
+            this.btConsultaE.Location = new System.Drawing.Point(302, 225);
             this.btConsultaE.Name = "btConsultaE";
             this.btConsultaE.Size = new System.Drawing.Size(145, 49);
             this.btConsultaE.TabIndex = 20;
@@ -153,7 +143,7 @@ namespace Nomina
             // btPlanilla
             // 
             this.btPlanilla.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btPlanilla.Location = new System.Drawing.Point(110, 298);
+            this.btPlanilla.Location = new System.Drawing.Point(479, 155);
             this.btPlanilla.Name = "btPlanilla";
             this.btPlanilla.Size = new System.Drawing.Size(137, 49);
             this.btPlanilla.TabIndex = 19;
@@ -164,7 +154,7 @@ namespace Nomina
             // btConsultaU
             // 
             this.btConsultaU.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsultaU.Location = new System.Drawing.Point(294, 222);
+            this.btConsultaU.Location = new System.Drawing.Point(302, 155);
             this.btConsultaU.Name = "btConsultaU";
             this.btConsultaU.Size = new System.Drawing.Size(145, 49);
             this.btConsultaU.TabIndex = 18;
@@ -175,18 +165,18 @@ namespace Nomina
             // btRecibo
             // 
             this.btRecibo.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRecibo.Location = new System.Drawing.Point(294, 153);
+            this.btRecibo.Location = new System.Drawing.Point(302, 432);
             this.btRecibo.Name = "btRecibo";
             this.btRecibo.Size = new System.Drawing.Size(145, 49);
             this.btRecibo.TabIndex = 17;
-            this.btRecibo.Text = "RECIBO";
+            this.btRecibo.Text = "REPORTE";
             this.btRecibo.UseVisualStyleBackColor = true;
             this.btRecibo.Click += new System.EventHandler(this.btRecibo_Click_1);
             // 
             // btUsuarios
             // 
             this.btUsuarios.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btUsuarios.Location = new System.Drawing.Point(110, 223);
+            this.btUsuarios.Location = new System.Drawing.Point(125, 155);
             this.btUsuarios.Name = "btUsuarios";
             this.btUsuarios.Size = new System.Drawing.Size(137, 49);
             this.btUsuarios.TabIndex = 16;
@@ -197,7 +187,7 @@ namespace Nomina
             // btEmpleados
             // 
             this.btEmpleados.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEmpleados.Location = new System.Drawing.Point(110, 153);
+            this.btEmpleados.Location = new System.Drawing.Point(125, 225);
             this.btEmpleados.Name = "btEmpleados";
             this.btEmpleados.Size = new System.Drawing.Size(137, 49);
             this.btEmpleados.TabIndex = 15;
@@ -205,17 +195,40 @@ namespace Nomina
             this.btEmpleados.UseVisualStyleBackColor = true;
             this.btEmpleados.Click += new System.EventHandler(this.btEmpleados_Click_1);
             // 
+            // btnConsHoras
+            // 
+            this.btnConsHoras.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsHoras.Location = new System.Drawing.Point(302, 292);
+            this.btnConsHoras.Name = "btnConsHoras";
+            this.btnConsHoras.Size = new System.Drawing.Size(145, 49);
+            this.btnConsHoras.TabIndex = 30;
+            this.btnConsHoras.Text = "CONSULTA DE HORAS";
+            this.btnConsHoras.UseVisualStyleBackColor = true;
+            this.btnConsHoras.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnConDed
+            // 
+            this.btnConDed.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConDed.Location = new System.Drawing.Point(302, 362);
+            this.btnConDed.Name = "btnConDed";
+            this.btnConDed.Size = new System.Drawing.Size(145, 49);
+            this.btnConDed.TabIndex = 31;
+            this.btnConDed.Text = "CONSULTA DE DEDUCCIONES";
+            this.btnConDed.UseVisualStyleBackColor = true;
+            this.btnConDed.Click += new System.EventHandler(this.btnConDed_Click);
+            // 
             // MENU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(730, 520);
+            this.Controls.Add(this.btnConDed);
+            this.Controls.Add(this.btnConsHoras);
             this.Controls.Add(this.btnDeducciones);
             this.Controls.Add(this.btnPermisos);
             this.Controls.Add(this.btnRoles);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btSalir);
@@ -240,7 +253,6 @@ namespace Nomina
         private System.Windows.Forms.Button btnPermisos;
         private System.Windows.Forms.Button btnRoles;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btSalir;
@@ -251,5 +263,7 @@ namespace Nomina
         private System.Windows.Forms.Button btRecibo;
         private System.Windows.Forms.Button btUsuarios;
         private System.Windows.Forms.Button btEmpleados;
+        private System.Windows.Forms.Button btnConsHoras;
+        private System.Windows.Forms.Button btnConDed;
     }
 }

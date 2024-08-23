@@ -38,7 +38,6 @@ namespace Nomina
             this.label9 = new System.Windows.Forms.Label();
             this.txtTotal_dev = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.btnImprimir = new System.Windows.Forms.Button();
             this.btGuardar = new System.Windows.Forms.Button();
             this.txtSueldoe = new System.Windows.Forms.TextBox();
             this.txtSueldom = new System.Windows.Forms.TextBox();
@@ -137,19 +136,6 @@ namespace Nomina
             this.label14.Size = new System.Drawing.Size(121, 17);
             this.label14.TabIndex = 93;
             this.label14.Text = "Total Devengado:";
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.BackColor = System.Drawing.Color.Teal;
-            this.btnImprimir.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimir.ForeColor = System.Drawing.Color.White;
-            this.btnImprimir.Location = new System.Drawing.Point(1168, 154);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(147, 52);
-            this.btnImprimir.TabIndex = 89;
-            this.btnImprimir.Text = "IMPRIMIR";
-            this.btnImprimir.UseVisualStyleBackColor = false;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btGuardar
             // 
@@ -341,7 +327,6 @@ namespace Nomina
             this.Controls.Add(this.label15);
             this.Controls.Add(this.txtTotal_dev);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.btGuardar);
             this.Controls.Add(this.txtTotal_des);
             this.Controls.Add(this.txtSueldoe);
@@ -374,7 +359,6 @@ namespace Nomina
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtTotal_dev;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Button btGuardar;
         private System.Windows.Forms.TextBox txtSueldoe;
         private System.Windows.Forms.TextBox txtSueldom;

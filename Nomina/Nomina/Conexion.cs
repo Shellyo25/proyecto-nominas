@@ -11,10 +11,10 @@ namespace Nomina
     {
         public static MySqlConnection getConexion()
         {
-            string servidor = "localhost";
-            string puerto = "3306";
-            string usuario = "root";
-            string password = "";
+            string servidor = "192.168.1.250";
+            string puerto = "3307";
+            string usuario = "proyecto";
+            string password = "12345";
             string bd = "nomina";
 
             string cadenaConexion = "server=" + servidor + "; port=" + puerto + "; user id=" + usuario + "; password=" +

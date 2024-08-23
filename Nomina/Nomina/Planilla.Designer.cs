@@ -30,7 +30,6 @@ namespace Nomina
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btSalir = new System.Windows.Forms.Button();
             this.btEliminar = new System.Windows.Forms.Button();
             this.btGuardar = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -63,13 +62,14 @@ namespace Nomina
             this.btnBuscar2 = new System.Windows.Forms.Button();
             this.txtId_salarios = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.btActualizar = new System.Windows.Forms.Button();
             this.txtDiasLab = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.btnBuscar3 = new System.Windows.Forms.Button();
             this.txtIdDeduc = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.MENU = new System.Windows.Forms.LinkLabel();
+            this.txtCodPlanilla = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,25 +84,12 @@ namespace Nomina
             this.label1.Text = "PLANILLA DE SUELDOS DE LOS EMPLEADOS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // btSalir
-            // 
-            this.btSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btSalir.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSalir.ForeColor = System.Drawing.Color.White;
-            this.btSalir.Location = new System.Drawing.Point(1076, 297);
-            this.btSalir.Name = "btSalir";
-            this.btSalir.Size = new System.Drawing.Size(147, 52);
-            this.btSalir.TabIndex = 57;
-            this.btSalir.Text = "SALIR";
-            this.btSalir.UseVisualStyleBackColor = false;
-            this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
-            // 
             // btEliminar
             // 
             this.btEliminar.BackColor = System.Drawing.Color.Maroon;
             this.btEliminar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEliminar.ForeColor = System.Drawing.Color.White;
-            this.btEliminar.Location = new System.Drawing.Point(1076, 230);
+            this.btEliminar.Location = new System.Drawing.Point(1076, 172);
             this.btEliminar.Name = "btEliminar";
             this.btEliminar.Size = new System.Drawing.Size(147, 52);
             this.btEliminar.TabIndex = 56;
@@ -126,7 +113,7 @@ namespace Nomina
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(107, 249);
+            this.label11.Location = new System.Drawing.Point(107, 299);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(56, 17);
             this.label11.TabIndex = 50;
@@ -158,21 +145,21 @@ namespace Nomina
             // 
             // txtSueldom
             // 
-            this.txtSueldom.Location = new System.Drawing.Point(178, 294);
+            this.txtSueldom.Location = new System.Drawing.Point(178, 344);
             this.txtSueldom.Name = "txtSueldom";
             this.txtSueldom.Size = new System.Drawing.Size(185, 22);
             this.txtSueldom.TabIndex = 44;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(178, 207);
+            this.txtApellido.Location = new System.Drawing.Point(178, 257);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(185, 22);
             this.txtApellido.TabIndex = 43;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(178, 169);
+            this.txtNombre.Location = new System.Drawing.Point(178, 219);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(185, 22);
             this.txtNombre.TabIndex = 42;
@@ -206,7 +193,7 @@ namespace Nomina
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(50, 297);
+            this.label4.Location = new System.Drawing.Point(50, 347);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 17);
             this.label4.TabIndex = 34;
@@ -215,7 +202,7 @@ namespace Nomina
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(96, 210);
+            this.label3.Location = new System.Drawing.Point(96, 260);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 17);
             this.label3.TabIndex = 33;
@@ -224,7 +211,7 @@ namespace Nomina
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(96, 172);
+            this.label2.Location = new System.Drawing.Point(96, 222);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 32;
@@ -269,7 +256,7 @@ namespace Nomina
             // 
             // dtFecha
             // 
-            this.dtFecha.Location = new System.Drawing.Point(178, 90);
+            this.dtFecha.Location = new System.Drawing.Point(178, 95);
             this.dtFecha.Name = "dtFecha";
             this.dtFecha.Size = new System.Drawing.Size(294, 22);
             this.dtFecha.TabIndex = 63;
@@ -277,7 +264,7 @@ namespace Nomina
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(69, 90);
+            this.label9.Location = new System.Drawing.Point(61, 99);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 17);
             this.label9.TabIndex = 62;
@@ -311,7 +298,7 @@ namespace Nomina
             // 
             // txtcodE
             // 
-            this.txtcodE.Location = new System.Drawing.Point(178, 129);
+            this.txtcodE.Location = new System.Drawing.Point(178, 179);
             this.txtcodE.Name = "txtcodE";
             this.txtcodE.Size = new System.Drawing.Size(133, 22);
             this.txtcodE.TabIndex = 68;
@@ -319,7 +306,7 @@ namespace Nomina
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(40, 134);
+            this.label10.Location = new System.Drawing.Point(40, 184);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(123, 17);
             this.label10.TabIndex = 67;
@@ -327,7 +314,7 @@ namespace Nomina
             // 
             // txtPuesto
             // 
-            this.txtPuesto.Location = new System.Drawing.Point(178, 249);
+            this.txtPuesto.Location = new System.Drawing.Point(178, 299);
             this.txtPuesto.Name = "txtPuesto";
             this.txtPuesto.Size = new System.Drawing.Size(185, 22);
             this.txtPuesto.TabIndex = 69;
@@ -350,7 +337,7 @@ namespace Nomina
             this.btnbuscar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnbuscar1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscar1.ForeColor = System.Drawing.Color.White;
-            this.btnbuscar1.Location = new System.Drawing.Point(334, 119);
+            this.btnbuscar1.Location = new System.Drawing.Point(334, 169);
             this.btnbuscar1.Name = "btnbuscar1";
             this.btnbuscar1.Size = new System.Drawing.Size(112, 40);
             this.btnbuscar1.TabIndex = 71;
@@ -386,19 +373,6 @@ namespace Nomina
             this.label17.Size = new System.Drawing.Size(111, 17);
             this.label17.TabIndex = 72;
             this.label17.Text = "Codigo Salarios:";
-            // 
-            // btActualizar
-            // 
-            this.btActualizar.BackColor = System.Drawing.Color.Teal;
-            this.btActualizar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btActualizar.ForeColor = System.Drawing.Color.White;
-            this.btActualizar.Location = new System.Drawing.Point(1076, 166);
-            this.btActualizar.Name = "btActualizar";
-            this.btActualizar.Size = new System.Drawing.Size(147, 52);
-            this.btActualizar.TabIndex = 55;
-            this.btActualizar.Text = "ACTUALIZAR";
-            this.btActualizar.UseVisualStyleBackColor = false;
-            this.btActualizar.Click += new System.EventHandler(this.btActualizar_Click);
             // 
             // txtDiasLab
             // 
@@ -458,11 +432,29 @@ namespace Nomina
             this.MENU.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MENU.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.MENU_LinkClicked);
             // 
+            // txtCodPlanilla
+            // 
+            this.txtCodPlanilla.Location = new System.Drawing.Point(178, 131);
+            this.txtCodPlanilla.Name = "txtCodPlanilla";
+            this.txtCodPlanilla.Size = new System.Drawing.Size(133, 22);
+            this.txtCodPlanilla.TabIndex = 82;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(80, 136);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(83, 17);
+            this.label19.TabIndex = 81;
+            this.label19.Text = "No. Planilla:";
+            // 
             // Planilla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1367, 669);
+            this.Controls.Add(this.txtCodPlanilla);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.MENU);
             this.Controls.Add(this.txtIdDeduc);
             this.Controls.Add(this.label18);
@@ -486,9 +478,7 @@ namespace Nomina
             this.Controls.Add(this.txtTotal_dev);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.btSalir);
             this.Controls.Add(this.btEliminar);
-            this.Controls.Add(this.btActualizar);
             this.Controls.Add(this.btGuardar);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtBoni);
@@ -516,7 +506,6 @@ namespace Nomina
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btSalir;
         private System.Windows.Forms.Button btEliminar;
         private System.Windows.Forms.Button btGuardar;
         private System.Windows.Forms.Label label11;
@@ -549,12 +538,13 @@ namespace Nomina
         private System.Windows.Forms.Button btnBuscar2;
         private System.Windows.Forms.TextBox txtId_salarios;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button btActualizar;
         private System.Windows.Forms.TextBox txtDiasLab;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnBuscar3;
         private System.Windows.Forms.TextBox txtIdDeduc;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.LinkLabel MENU;
+        private System.Windows.Forms.TextBox txtCodPlanilla;
+        private System.Windows.Forms.Label label19;
     }
 }
