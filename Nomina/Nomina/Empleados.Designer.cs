@@ -61,6 +61,8 @@ namespace Nomina
             this.MENU = new System.Windows.Forms.LinkLabel();
             this.empleadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.empleadosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.txtCodUsuario = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadosBindingSource1)).BeginInit();
@@ -79,7 +81,7 @@ namespace Nomina
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 90);
+            this.label2.Location = new System.Drawing.Point(32, 118);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 1;
@@ -88,7 +90,7 @@ namespace Nomina
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 128);
+            this.label3.Location = new System.Drawing.Point(32, 156);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 17);
             this.label3.TabIndex = 2;
@@ -97,7 +99,7 @@ namespace Nomina
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(31, 206);
+            this.label4.Location = new System.Drawing.Point(31, 234);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 17);
             this.label4.TabIndex = 3;
@@ -115,7 +117,7 @@ namespace Nomina
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(32, 247);
+            this.label6.Location = new System.Drawing.Point(32, 275);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 17);
             this.label6.TabIndex = 5;
@@ -167,28 +169,28 @@ namespace Nomina
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(114, 87);
+            this.txtNombre.Location = new System.Drawing.Point(114, 115);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(295, 22);
             this.txtNombre.TabIndex = 11;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(114, 125);
+            this.txtApellido.Location = new System.Drawing.Point(114, 153);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(295, 22);
             this.txtApellido.TabIndex = 12;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(114, 206);
+            this.txtTelefono.Location = new System.Drawing.Point(114, 234);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(295, 22);
             this.txtTelefono.TabIndex = 14;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(114, 244);
+            this.txtDireccion.Location = new System.Drawing.Point(114, 272);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(295, 22);
             this.txtDireccion.TabIndex = 15;
@@ -224,7 +226,7 @@ namespace Nomina
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(49, 169);
+            this.label11.Location = new System.Drawing.Point(49, 197);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(43, 17);
             this.label11.TabIndex = 21;
@@ -236,7 +238,7 @@ namespace Nomina
             this.cbbSexo.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
-            this.cbbSexo.Location = new System.Drawing.Point(114, 160);
+            this.cbbSexo.Location = new System.Drawing.Point(114, 188);
             this.cbbSexo.Name = "cbbSexo";
             this.cbbSexo.Size = new System.Drawing.Size(121, 24);
             this.cbbSexo.TabIndex = 22;
@@ -340,11 +342,29 @@ namespace Nomina
             this.empleadosBindingSource1.DataSource = typeof(Nomina.Empleados);
             this.empleadosBindingSource1.CurrentChanged += new System.EventHandler(this.empleadosBindingSource1_CurrentChanged);
             // 
+            // txtCodUsuario
+            // 
+            this.txtCodUsuario.Location = new System.Drawing.Point(114, 84);
+            this.txtCodUsuario.Name = "txtCodUsuario";
+            this.txtCodUsuario.Size = new System.Drawing.Size(134, 22);
+            this.txtCodUsuario.TabIndex = 35;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(-1, 89);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(109, 17);
+            this.label14.TabIndex = 34;
+            this.label14.Text = "Codigo Usuario:";
+            // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 549);
+            this.Controls.Add(this.txtCodUsuario);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.MENU);
             this.Controls.Add(this.btEliminar);
             this.Controls.Add(this.btActualizar);
@@ -418,5 +438,7 @@ namespace Nomina
         private System.Windows.Forms.LinkLabel MENU;
         private System.Windows.Forms.BindingSource empleadosBindingSource;
         private System.Windows.Forms.BindingSource empleadosBindingSource1;
+        private System.Windows.Forms.TextBox txtCodUsuario;
+        private System.Windows.Forms.Label label14;
     }
 }

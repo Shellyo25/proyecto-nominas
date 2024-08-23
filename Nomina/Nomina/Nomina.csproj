@@ -52,6 +52,12 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="Control.cs" />
+    <Compile Include="Deducciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deducciones.Designer.cs">
+      <DependentUpon>Deducciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,12 @@
     <Compile Include="Recibo.Designer.cs">
       <DependentUpon>Recibo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Rol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rol.Designer.cs">
+      <DependentUpon>Rol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Rusuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +134,9 @@
       <DependentUpon>UsuarioRegistrados.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuarios.cs" />
+    <EmbeddedResource Include="Deducciones.resx">
+      <DependentUpon>Deducciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +173,9 @@
     <EmbeddedResource Include="Recibo.resx">
       <DependentUpon>Recibo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Rol.resx">
+      <DependentUpon>Rol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Rusuario.resx">
       <DependentUpon>Rusuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +183,7 @@
       <DependentUpon>UsuarioRegistrados.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Empleados.datasource" />
+    <None Include="Properties\DataSources\Rol.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -86,8 +86,6 @@ C:\Users\gerar\Documents\Proyecto AS\proyecto-nominas\Nomina\Nomina\obj\Debug\No
 C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\bin\Debug\Nomina.exe.config
 C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\bin\Debug\Nomina.exe
 C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\bin\Debug\Nomina.pdb
-C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\bin\Debug\MySql.Data.xml
-C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.AssemblyReference.cache
 C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Empleados.resources
 C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Horas_trabajadas.resources
 C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.FrmLogin.resources
@@ -105,3 +103,6 @@ C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\
 C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.CopyComplete
 C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.exe
 C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.pdb
+C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Deducciones.resources
+C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.Rol.resources
+C:\Users\maris\OneDrive\Escritorio\microproyecto\proyecto-nominas\Nomina\Nomina\obj\Debug\Nomina.csproj.AssemblyReference.cache

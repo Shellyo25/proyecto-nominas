@@ -18,7 +18,6 @@ namespace Nomina
             InitializeComponent();
         }
         MySqlConnection cn = Conexion.getConexion();
-
         private void ConsultaEmpleados_Load(object sender, EventArgs e)
         {
             String consulta = "select * from empleados";

@@ -112,9 +112,9 @@ namespace Nomina
 
         private void btnDeducciones_Click(object sender, EventArgs e)
         {
-            //Deducciones frm = new Deducciones();
-           // frm.Visible = true;
-           // this.Visible = false;
+            Deducciones frm = new Deducciones();
+            frm.Visible = true;
+            this.Visible = false;
         }
 
         private void btnPermisos_Click(object sender, EventArgs e)
@@ -126,9 +126,9 @@ namespace Nomina
 
         private void btnRoles_Click(object sender, EventArgs e)
         {
-            //Roles frm = new Roles();
-            //frm.Visible = true;
-            //this.Visible = false;
+            Rol frm = new Rol();
+            frm.Visible = true;
+            this.Visible = false;
         }
 
         private void btSalir_Click_1(object sender, EventArgs e)

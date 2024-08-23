@@ -35,15 +35,14 @@ namespace Nomina
                 cn.Open();
 
                 string insertQuery = @"
-                INSERT INTO Permisos (Nombre, Descrip, ID_Empl, FechaPerm)
-                VALUES (@Nombre, @Descrip, @ID_Empl, @FechaPerm)";
+                INSERT INTO Permisos (ID_usuario, Nom_usuario, Descripcion)
+                VALUES (@ID_usuario, @Nombre, @Descrip)";
 
                 using (MySqlCommand insertCommand = new MySqlCommand(insertQuery, cn))
                 {
+                    insertCommand.Parameters.AddWithValue("@ID_usuario", TxtID.Text);
                     insertCommand.Parameters.AddWithValue("@Nombre", TxtNombre.Text);
                     insertCommand.Parameters.AddWithValue("@Descrip", TxtDescr.Text);
-                    insertCommand.Parameters.AddWithValue("@ID_Empl", TxtID.Text);
-                    insertCommand.Parameters.AddWithValue("@FechaPerm", DTPFechaPerm.Value.ToString("yyyy-MM-dd"));
 
                     insertCommand.ExecuteNonQuery();
                     MessageBox.Show("¡Permiso guardado correctamente!");
@@ -60,17 +59,9 @@ namespace Nomina
             }
         }
 
-        private void LimpiarCampos()
-        {
-            // Limpiar los campos del formulario
-            TxtID.Clear();
-            TxtDescr.Clear();
-            DTPFechaPerm.Value = DateTime.Now;
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(TxtID.Text, out int idEmpleado))
+            if (int.TryParse(TxtID.Text, out int idusuario))
             {
                 try
                 {
@@ -79,19 +70,19 @@ namespace Nomina
                         cn.Open();
 
                         string query = @"
-                        SELECT Nombre
-                        FROM empleados 
-                        WHERE ID_empleado = @IDEmpls";
+                        SELECT usuario
+                        FROM  usuarios
+                        WHERE id = @ID_usuario";
 
                         using (MySqlCommand comando = new MySqlCommand(query, cn))
                         {
-                            comando.Parameters.AddWithValue("@IDEmpls", idEmpleado);
+                            comando.Parameters.AddWithValue("@ID_usuario", idusuario);
 
                             using (MySqlDataReader reader = comando.ExecuteReader())
                             {
                                 if (reader.Read())
                                 {
-                                    TxtNombre.Text = reader["Nombre"].ToString();
+                                    TxtNombre.Text = reader["usuario"].ToString();
                                 }
                                 else
                                 {
@@ -123,7 +114,7 @@ namespace Nomina
         {
             try
             {
-                string query = "SELECT ID_Permiso, Nombre, FechaPerm, Descrip, ID_Empl FROM Permisos";
+                string query = "SELECT ID_Permiso, ID_usuario, Nom_usuario, Descripcion FROM Permisos";
 
                 using (MySqlDataAdapter adaptador = new MySqlDataAdapter(query, cn))
                 {
@@ -143,6 +134,11 @@ namespace Nomina
             MENU menu = new MENU();
             menu.Show();
             this.Hide();
+        }
+
+        private void Permisos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
