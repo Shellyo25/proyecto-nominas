@@ -20,11 +20,18 @@ namespace Nomina
         MySqlConnection cn = Conexion.getConexion();
         private void PlanillasRegistradas_Load(object sender, EventArgs e)
         {
-            String consulta = "select * from planillas";
+            String consulta = "select * from Planilla";
             MySqlDataAdapter adaptador = new MySqlDataAdapter(consulta, cn);
             DataTable dt = new DataTable();
             adaptador.Fill(dt);
             dataGridView1.DataSource = dt;
+        }
+
+        private void MENU_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MENU menu = new MENU();
+            menu.Show();
+            this.Hide();
         }
     }
 }

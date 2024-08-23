@@ -42,8 +42,8 @@ namespace Nomina
             this.dataGridViewPermisos = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.DTPFechaPerm = new System.Windows.Forms.DateTimePicker();
-            this.empleadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.BtnMENU = new System.Windows.Forms.Button();
+            this.empleadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPermisos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadosBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -62,32 +62,32 @@ namespace Nomina
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(37, 80);
+            this.label2.Location = new System.Drawing.Point(34, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 17);
+            this.label2.Size = new System.Drawing.Size(87, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "ID Empleado";
+            this.label2.Text = "No. Usuario:";
             // 
             // TxtID
             // 
-            this.TxtID.Location = new System.Drawing.Point(166, 78);
+            this.TxtID.Location = new System.Drawing.Point(163, 110);
             this.TxtID.Name = "TxtID";
             this.TxtID.Size = new System.Drawing.Size(259, 22);
             this.TxtID.TabIndex = 2;
             // 
             // TxtDescr
             // 
-            this.TxtDescr.Location = new System.Drawing.Point(166, 254);
+            this.TxtDescr.Location = new System.Drawing.Point(163, 195);
             this.TxtDescr.Multiline = true;
             this.TxtDescr.Name = "TxtDescr";
-            this.TxtDescr.Size = new System.Drawing.Size(712, 126);
+            this.TxtDescr.Size = new System.Drawing.Size(406, 65);
             this.TxtDescr.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(37, 256);
+            this.label3.Location = new System.Drawing.Point(34, 197);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 17);
             this.label3.TabIndex = 3;
@@ -95,7 +95,7 @@ namespace Nomina
             // 
             // BtnGuardar
             // 
-            this.BtnGuardar.Location = new System.Drawing.Point(166, 400);
+            this.BtnGuardar.Location = new System.Drawing.Point(598, 209);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(90, 37);
             this.BtnGuardar.TabIndex = 5;
@@ -105,7 +105,7 @@ namespace Nomina
             // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(585, 78);
+            this.TxtNombre.Location = new System.Drawing.Point(163, 150);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.ReadOnly = true;
             this.TxtNombre.Size = new System.Drawing.Size(259, 22);
@@ -115,15 +115,15 @@ namespace Nomina
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label4.Location = new System.Drawing.Point(456, 80);
+            this.label4.Location = new System.Drawing.Point(34, 152);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 17);
+            this.label4.Size = new System.Drawing.Size(61, 17);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Nombre Empleado";
+            this.label4.Text = "Usuario:";
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(166, 124);
+            this.BtnBuscar.Location = new System.Drawing.Point(462, 103);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(90, 37);
             this.BtnBuscar.TabIndex = 8;
@@ -134,10 +134,12 @@ namespace Nomina
             // dataGridViewPermisos
             // 
             this.dataGridViewPermisos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPermisos.Location = new System.Drawing.Point(40, 458);
+            this.dataGridViewPermisos.Location = new System.Drawing.Point(12, 306);
             this.dataGridViewPermisos.Name = "dataGridViewPermisos";
+            this.dataGridViewPermisos.ReadOnly = true;
             this.dataGridViewPermisos.RowHeadersWidth = 51;
             this.dataGridViewPermisos.RowTemplate.Height = 24;
+            this.dataGridViewPermisos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewPermisos.Size = new System.Drawing.Size(875, 176);
             this.dataGridViewPermisos.TabIndex = 9;
             // 
@@ -145,7 +147,7 @@ namespace Nomina
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(37, 197);
+            this.label5.Location = new System.Drawing.Point(37, 73);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 17);
             this.label5.TabIndex = 10;
@@ -153,14 +155,10 @@ namespace Nomina
             // 
             // DTPFechaPerm
             // 
-            this.DTPFechaPerm.Location = new System.Drawing.Point(166, 197);
+            this.DTPFechaPerm.Location = new System.Drawing.Point(163, 73);
             this.DTPFechaPerm.Name = "DTPFechaPerm";
             this.DTPFechaPerm.Size = new System.Drawing.Size(200, 22);
             this.DTPFechaPerm.TabIndex = 11;
-            // 
-            // empleadosBindingSource
-            // 
-            this.empleadosBindingSource.DataSource = typeof(Nomina.Empleados);
             // 
             // BtnMENU
             // 
@@ -172,12 +170,16 @@ namespace Nomina
             this.BtnMENU.UseVisualStyleBackColor = true;
             this.BtnMENU.Click += new System.EventHandler(this.BtnMENU_Click);
             // 
+            // empleadosBindingSource
+            // 
+            this.empleadosBindingSource.DataSource = typeof(Nomina.Empleados);
+            // 
             // Permisos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(932, 676);
+            this.ClientSize = new System.Drawing.Size(932, 511);
             this.Controls.Add(this.BtnMENU);
             this.Controls.Add(this.DTPFechaPerm);
             this.Controls.Add(this.label5);
@@ -193,6 +195,7 @@ namespace Nomina
             this.Controls.Add(this.label1);
             this.Name = "Permisos";
             this.Text = "Permisos";
+            this.Load += new System.EventHandler(this.Permisos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPermisos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadosBindingSource)).EndInit();
             this.ResumeLayout(false);

@@ -73,6 +73,7 @@ namespace Nomina
             this.TxtSlrioExtra.ReadOnly = true;
             this.TxtSlrioExtra.Size = new System.Drawing.Size(186, 22);
             this.TxtSlrioExtra.TabIndex = 42;
+            this.TxtSlrioExtra.TextChanged += new System.EventHandler(this.TxtSlrioExtra_TextChanged);
             // 
             // label8
             // 
@@ -118,6 +119,7 @@ namespace Nomina
             this.TxtDiasLbrds.Name = "TxtDiasLbrds";
             this.TxtDiasLbrds.Size = new System.Drawing.Size(186, 22);
             this.TxtDiasLbrds.TabIndex = 36;
+            this.TxtDiasLbrds.TextChanged += new System.EventHandler(this.TxtDiasLbrds_TextChanged);
             // 
             // label11
             // 

@@ -341,7 +341,7 @@ namespace Nomina
 
         }
 
-        private void textBox9_TextChanged(object sender, EventArgs e)
+        private void textBox9_TextChanged(object sender, EventArgs e)//hras extras
         {
             // Verifica si el texto es un número válido
             if (decimal.TryParse(TxtHrsExtra.Text, out decimal horasExtras))
@@ -375,22 +375,48 @@ namespace Nomina
             }
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void textBox5_TextChanged(object sender, EventArgs e)//total devengado
         {
 
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void textBox3_TextChanged(object sender, EventArgs e)//sueld mensual
+        {
+            if (decimal.TryParse(TxtSlrioMnsual.Text, out decimal salarioMensual))
+            {
+                if (decimal.TryParse(TxtDiasLbrds.Text, out decimal DiasLab))
+                {
+                    // Calcular el salario diario
+
+                    decimal salarioDiario = salarioMensual / DiasLab; // Suponiendo 30 días en un mes
+                    TxtSlrioDiario.Text = salarioDiario.ToString("F2");
+
+                    // Recalcular el salario total
+                    CalcularSalarioTotal();
+                }
+            }
+            else
+            {
+                TxtSlrioDiario.Text = "0.00";
+            }
+
+        }
+
+        private void textBox6_TextChanged_1(object sender, EventArgs e)//salario diario
         {
             // Verifica si el texto es un número válido
             if (decimal.TryParse(TxtSlrioMnsual.Text, out decimal salarioMensual))
             {
-                // Calcular el salario diario
-                decimal salarioDiario = salarioMensual / 30; // Suponiendo 30 días en un mes
-                TxtSlrioDiario.Text = salarioDiario.ToString("F2");
+                if (decimal.TryParse(TxtDiasLbrds.Text, out decimal DiasLab))
+                {
+                    // Calcular el salario diario
 
-                // Recalcular el salario total
-                CalcularSalarioTotal();
+                    decimal salarioDiario = salarioMensual / DiasLab; // Suponiendo 30 días en un mes
+                    TxtSlrioDiario.Text = salarioDiario.ToString("F2");
+
+                    // Recalcular el salario total
+                    CalcularSalarioTotal();
+                }
             }
             else
             {
@@ -398,17 +424,25 @@ namespace Nomina
             }
         }
 
-        private void textBox6_TextChanged_1(object sender, EventArgs e)
+        private void TxtSlrioExtra_TextChanged(object sender, EventArgs e)
         {
-            // Verifica si el texto es un número válido
+
+        }
+
+        private void TxtDiasLbrds_TextChanged(object sender, EventArgs e)
+        {
             if (decimal.TryParse(TxtSlrioMnsual.Text, out decimal salarioMensual))
             {
-                // Calcular el salario diario
-                decimal salarioDiario = salarioMensual / 30; // Suponiendo 30 días en un mes
-                TxtSlrioDiario.Text = salarioDiario.ToString("F2");
+                if (decimal.TryParse(TxtDiasLbrds.Text, out decimal DiasLab))
+                {
+                    // Calcular el salario diario
 
-                // Recalcular el salario total
-                CalcularSalarioTotal();
+                    decimal salarioDiario = salarioMensual / DiasLab; // Suponiendo 30 días en un mes
+                    TxtSlrioDiario.Text = salarioDiario.ToString("F2");
+
+                    // Recalcular el salario total
+                    CalcularSalarioTotal();
+                }
             }
             else
             {

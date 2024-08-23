@@ -38,13 +38,10 @@ namespace Nomina
             this.label9 = new System.Windows.Forms.Label();
             this.txtTotal_dev = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.btSalir = new System.Windows.Forms.Button();
-            this.btEliminar = new System.Windows.Forms.Button();
-            this.btActualizar = new System.Windows.Forms.Button();
             this.btGuardar = new System.Windows.Forms.Button();
             this.txtSueldoe = new System.Windows.Forms.TextBox();
             this.txtSueldom = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodPlanilla = new System.Windows.Forms.TextBox();
             this.txtCod = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,6 +52,11 @@ namespace Nomina
             this.label15 = new System.Windows.Forms.Label();
             this.txtTotal_des = new System.Windows.Forms.TextBox();
             this.MENU = new System.Windows.Forms.LinkLabel();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,14 +65,17 @@ namespace Nomina
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(46, 385);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1236, 195);
             this.dataGridView1.TabIndex = 104;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // txtcodE
             // 
-            this.txtcodE.Location = new System.Drawing.Point(166, 200);
+            this.txtcodE.Location = new System.Drawing.Point(894, 342);
             this.txtcodE.Name = "txtcodE";
             this.txtcodE.Size = new System.Drawing.Size(133, 22);
             this.txtcodE.TabIndex = 102;
@@ -78,7 +83,7 @@ namespace Nomina
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(28, 205);
+            this.label10.Location = new System.Drawing.Point(756, 347);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(123, 17);
             this.label10.TabIndex = 101;
@@ -102,7 +107,7 @@ namespace Nomina
             // 
             // dtFecha
             // 
-            this.dtFecha.Location = new System.Drawing.Point(166, 115);
+            this.dtFecha.Location = new System.Drawing.Point(241, 116);
             this.dtFecha.Name = "dtFecha";
             this.dtFecha.Size = new System.Drawing.Size(294, 22);
             this.dtFecha.TabIndex = 97;
@@ -110,7 +115,7 @@ namespace Nomina
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(57, 115);
+            this.label9.Location = new System.Drawing.Point(132, 116);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 17);
             this.label9.TabIndex = 96;
@@ -132,42 +137,6 @@ namespace Nomina
             this.label14.TabIndex = 93;
             this.label14.Text = "Total Devengado:";
             // 
-            // btSalir
-            // 
-            this.btSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btSalir.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSalir.ForeColor = System.Drawing.Color.White;
-            this.btSalir.Location = new System.Drawing.Point(1168, 285);
-            this.btSalir.Name = "btSalir";
-            this.btSalir.Size = new System.Drawing.Size(147, 52);
-            this.btSalir.TabIndex = 91;
-            this.btSalir.Text = "SALIR";
-            this.btSalir.UseVisualStyleBackColor = false;
-            // 
-            // btEliminar
-            // 
-            this.btEliminar.BackColor = System.Drawing.Color.Maroon;
-            this.btEliminar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEliminar.ForeColor = System.Drawing.Color.White;
-            this.btEliminar.Location = new System.Drawing.Point(1168, 218);
-            this.btEliminar.Name = "btEliminar";
-            this.btEliminar.Size = new System.Drawing.Size(147, 52);
-            this.btEliminar.TabIndex = 90;
-            this.btEliminar.Text = "ELIMINAR";
-            this.btEliminar.UseVisualStyleBackColor = false;
-            // 
-            // btActualizar
-            // 
-            this.btActualizar.BackColor = System.Drawing.Color.Teal;
-            this.btActualizar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btActualizar.ForeColor = System.Drawing.Color.White;
-            this.btActualizar.Location = new System.Drawing.Point(1168, 154);
-            this.btActualizar.Name = "btActualizar";
-            this.btActualizar.Size = new System.Drawing.Size(147, 52);
-            this.btActualizar.TabIndex = 89;
-            this.btActualizar.Text = "ACTUALIZAR";
-            this.btActualizar.UseVisualStyleBackColor = false;
-            // 
             // btGuardar
             // 
             this.btGuardar.BackColor = System.Drawing.Color.Green;
@@ -179,6 +148,7 @@ namespace Nomina
             this.btGuardar.TabIndex = 88;
             this.btGuardar.Text = "GUARDAR";
             this.btGuardar.UseVisualStyleBackColor = false;
+            this.btGuardar.Click += new System.EventHandler(this.btGuardar_Click);
             // 
             // txtSueldoe
             // 
@@ -194,16 +164,16 @@ namespace Nomina
             this.txtSueldom.Size = new System.Drawing.Size(185, 22);
             this.txtSueldom.TabIndex = 83;
             // 
-            // txtNombre
+            // txtCodPlanilla
             // 
-            this.txtNombre.Location = new System.Drawing.Point(166, 240);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(295, 22);
-            this.txtNombre.TabIndex = 81;
+            this.txtCodPlanilla.Location = new System.Drawing.Point(240, 195);
+            this.txtCodPlanilla.Name = "txtCodPlanilla";
+            this.txtCodPlanilla.Size = new System.Drawing.Size(134, 22);
+            this.txtCodPlanilla.TabIndex = 81;
             // 
             // txtCod
             // 
-            this.txtCod.Location = new System.Drawing.Point(165, 153);
+            this.txtCod.Location = new System.Drawing.Point(240, 154);
             this.txtCod.Name = "txtCod";
             this.txtCod.Size = new System.Drawing.Size(134, 22);
             this.txtCod.TabIndex = 80;
@@ -229,7 +199,7 @@ namespace Nomina
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 243);
+            this.label2.Location = new System.Drawing.Point(117, 198);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 17);
             this.label2.TabIndex = 74;
@@ -238,7 +208,7 @@ namespace Nomina
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(43, 156);
+            this.label13.Location = new System.Drawing.Point(118, 157);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(104, 17);
             this.label13.TabIndex = 73;
@@ -290,11 +260,62 @@ namespace Nomina
             this.MENU.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MENU.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.MENU_LinkClicked);
             // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(241, 236);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(243, 22);
+            this.txtNombre.TabIndex = 107;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(147, 244);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 17);
+            this.label3.TabIndex = 106;
+            this.label3.Text = "Nombre:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(147, 290);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(69, 17);
+            this.label7.TabIndex = 108;
+            this.label7.Text = "Apellidos:";
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Location = new System.Drawing.Point(240, 283);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(243, 22);
+            this.txtApellido.TabIndex = 109;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnBuscar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Location = new System.Drawing.Point(380, 184);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(104, 38);
+            this.btnBuscar.TabIndex = 110;
+            this.btnBuscar.Text = "BUSCAR";
+            this.btnBuscar.UseMnemonic = false;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // Recibo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1346, 637);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.MENU);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtcodE);
@@ -306,14 +327,11 @@ namespace Nomina
             this.Controls.Add(this.label15);
             this.Controls.Add(this.txtTotal_dev);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.btSalir);
-            this.Controls.Add(this.btEliminar);
-            this.Controls.Add(this.btActualizar);
             this.Controls.Add(this.btGuardar);
             this.Controls.Add(this.txtTotal_des);
             this.Controls.Add(this.txtSueldoe);
             this.Controls.Add(this.txtSueldom);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCodPlanilla);
             this.Controls.Add(this.txtCod);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -341,13 +359,10 @@ namespace Nomina
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtTotal_dev;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button btSalir;
-        private System.Windows.Forms.Button btEliminar;
-        private System.Windows.Forms.Button btActualizar;
         private System.Windows.Forms.Button btGuardar;
         private System.Windows.Forms.TextBox txtSueldoe;
         private System.Windows.Forms.TextBox txtSueldom;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCodPlanilla;
         private System.Windows.Forms.TextBox txtCod;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
@@ -358,5 +373,10 @@ namespace Nomina
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtTotal_des;
         private System.Windows.Forms.LinkLabel MENU;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

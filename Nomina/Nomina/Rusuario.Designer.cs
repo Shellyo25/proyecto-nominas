@@ -49,7 +49,7 @@ namespace Nomina
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(263, 229);
+            this.label1.Location = new System.Drawing.Point(263, 265);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 25);
             this.label1.TabIndex = 0;
@@ -60,7 +60,7 @@ namespace Nomina
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(265, 83);
+            this.label2.Location = new System.Drawing.Point(265, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 25);
             this.label2.TabIndex = 1;
@@ -78,7 +78,7 @@ namespace Nomina
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(230, 128);
+            this.label5.Location = new System.Drawing.Point(230, 164);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 25);
             this.label5.TabIndex = 4;
@@ -94,21 +94,21 @@ namespace Nomina
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(363, 233);
+            this.txtNombre.Location = new System.Drawing.Point(363, 269);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(187, 22);
             this.txtNombre.TabIndex = 8;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(363, 87);
+            this.txtUsuario.Location = new System.Drawing.Point(363, 123);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(187, 22);
             this.txtUsuario.TabIndex = 11;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(363, 132);
+            this.txtPassword.Location = new System.Drawing.Point(363, 168);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(187, 22);
@@ -118,7 +118,7 @@ namespace Nomina
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(140, 172);
+            this.label6.Location = new System.Drawing.Point(140, 208);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(210, 25);
             this.label6.TabIndex = 14;
@@ -127,7 +127,7 @@ namespace Nomina
             // 
             // txtConPassword
             // 
-            this.txtConPassword.Location = new System.Drawing.Point(363, 176);
+            this.txtConPassword.Location = new System.Drawing.Point(363, 212);
             this.txtConPassword.Name = "txtConPassword";
             this.txtConPassword.PasswordChar = '*';
             this.txtConPassword.Size = new System.Drawing.Size(187, 22);

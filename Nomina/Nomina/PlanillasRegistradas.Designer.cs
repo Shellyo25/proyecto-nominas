@@ -31,6 +31,7 @@ namespace Nomina
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MENU = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,11 +55,24 @@ namespace Nomina
             this.dataGridView1.Size = new System.Drawing.Size(682, 214);
             this.dataGridView1.TabIndex = 1;
             // 
+            // MENU
+            // 
+            this.MENU.AutoSize = true;
+            this.MENU.Location = new System.Drawing.Point(685, 46);
+            this.MENU.Name = "MENU";
+            this.MENU.Size = new System.Drawing.Size(48, 17);
+            this.MENU.TabIndex = 35;
+            this.MENU.TabStop = true;
+            this.MENU.Text = "MENU";
+            this.MENU.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MENU.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.MENU_LinkClicked);
+            // 
             // PlanillasRegistradas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.MENU);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "PlanillasRegistradas";
@@ -73,5 +87,6 @@ namespace Nomina
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.LinkLabel MENU;
     }
 }
