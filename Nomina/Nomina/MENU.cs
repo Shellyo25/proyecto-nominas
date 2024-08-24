@@ -148,10 +148,37 @@ namespace Nomina
 
         private void btnConDed_Click(object sender, EventArgs e)
         {
-            ConsultaDeducciones frm = new ConsultaTotalDevengado();
+            ConsultaDeducciones frm = new ConsultaDeducciones();
             frm.Visible = true;
             this.Visible = false;
-        } 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmLogin frm = new FrmLogin();
+            frm.Visible = true;
+            Usuarios r = new Usuarios();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmLogin frm = new FrmLogin();
+            frm.Visible = true;
+            Usuarios r = new Usuarios();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            ConsultaEmpleads frm = new ConsultaEmpleads();
+           
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
 

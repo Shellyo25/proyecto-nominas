@@ -217,10 +217,10 @@ namespace Nomina
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(503, 26);
+            this.label1.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(254, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(302, 20);
+            this.label1.Size = new System.Drawing.Size(625, 41);
             this.label1.TabIndex = 72;
             this.label1.Text = "RECIBO DEL PAGO DE SUELDO  ";
             // 
@@ -251,7 +251,8 @@ namespace Nomina
             // MENU
             // 
             this.MENU.AutoSize = true;
-            this.MENU.Location = new System.Drawing.Point(1222, 41);
+            this.MENU.LinkColor = System.Drawing.Color.White;
+            this.MENU.Location = new System.Drawing.Point(1255, 21);
             this.MENU.Name = "MENU";
             this.MENU.Size = new System.Drawing.Size(48, 17);
             this.MENU.TabIndex = 105;
@@ -310,6 +311,7 @@ namespace Nomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(1346, 637);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtApellido);

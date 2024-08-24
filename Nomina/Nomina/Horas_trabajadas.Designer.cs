@@ -208,7 +208,8 @@ namespace Nomina
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(261, 37);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(333, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(231, 32);
             this.label1.TabIndex = 23;
@@ -217,6 +218,7 @@ namespace Nomina
             // MENU
             // 
             this.MENU.AutoSize = true;
+            this.MENU.LinkColor = System.Drawing.Color.White;
             this.MENU.Location = new System.Drawing.Point(877, 26);
             this.MENU.Name = "MENU";
             this.MENU.Size = new System.Drawing.Size(48, 17);
@@ -327,6 +329,7 @@ namespace Nomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(1031, 533);
             this.Controls.Add(this.TxtSlrioDiario);
             this.Controls.Add(this.TxtSlrioMnsual);

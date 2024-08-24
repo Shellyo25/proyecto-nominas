@@ -29,6 +29,7 @@ namespace Nomina
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaTotalDevengado));
             this.MENU = new System.Windows.Forms.LinkLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,6 +39,8 @@ namespace Nomina
             // MENU
             // 
             this.MENU.AutoSize = true;
+            this.MENU.BackColor = System.Drawing.Color.Transparent;
+            this.MENU.LinkColor = System.Drawing.Color.White;
             this.MENU.Location = new System.Drawing.Point(722, 30);
             this.MENU.Name = "MENU";
             this.MENU.Size = new System.Drawing.Size(48, 17);
@@ -50,20 +53,23 @@ namespace Nomina
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 121);
+            this.dataGridView1.Location = new System.Drawing.Point(45, 145);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 231);
+            this.dataGridView1.Size = new System.Drawing.Size(758, 231);
             this.dataGridView1.TabIndex = 36;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(261, 67);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(217, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(231, 20);
+            this.label1.Size = new System.Drawing.Size(392, 29);
             this.label1.TabIndex = 35;
             this.label1.Text = "Caluclo del Total Devengado";
             // 
@@ -71,7 +77,8 @@ namespace Nomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(824, 388);
             this.Controls.Add(this.MENU);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);

@@ -29,6 +29,7 @@ namespace Nomina
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaDeducciones));
             this.MENU = new System.Windows.Forms.LinkLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,7 +39,7 @@ namespace Nomina
             // MENU
             // 
             this.MENU.AutoSize = true;
-            this.MENU.Location = new System.Drawing.Point(722, 64);
+            this.MENU.Location = new System.Drawing.Point(726, 26);
             this.MENU.Name = "MENU";
             this.MENU.Size = new System.Drawing.Size(48, 17);
             this.MENU.TabIndex = 37;
@@ -50,7 +51,7 @@ namespace Nomina
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 155);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 207);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -60,10 +61,12 @@ namespace Nomina
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(245, 101);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(143, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 20);
+            this.label1.Size = new System.Drawing.Size(492, 34);
             this.label1.TabIndex = 35;
             this.label1.Text = "Deducciones de los Empeados";
             // 
@@ -71,6 +74,7 @@ namespace Nomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.MENU);
             this.Controls.Add(this.dataGridView1);

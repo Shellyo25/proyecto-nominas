@@ -29,6 +29,7 @@ namespace Nomina
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deducciones));
             this.btEliminar = new System.Windows.Forms.Button();
             this.btGuardar = new System.Windows.Forms.Button();
             this.TxtISR = new System.Windows.Forms.TextBox();
@@ -47,7 +48,13 @@ namespace Nomina
             this.txtTotalDvg = new System.Windows.Forms.TextBox();
             this.TxtTtldeduc = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // btEliminar
@@ -55,10 +62,10 @@ namespace Nomina
             this.btEliminar.BackColor = System.Drawing.Color.Maroon;
             this.btEliminar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEliminar.ForeColor = System.Drawing.Color.White;
-            this.btEliminar.Location = new System.Drawing.Point(728, 156);
+            this.btEliminar.Location = new System.Drawing.Point(778, 141);
             this.btEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btEliminar.Name = "btEliminar";
-            this.btEliminar.Size = new System.Drawing.Size(147, 52);
+            this.btEliminar.Size = new System.Drawing.Size(112, 52);
             this.btEliminar.TabIndex = 62;
             this.btEliminar.Text = "ELIMINAR";
             this.btEliminar.UseVisualStyleBackColor = false;
@@ -69,10 +76,10 @@ namespace Nomina
             this.btGuardar.BackColor = System.Drawing.Color.Green;
             this.btGuardar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btGuardar.ForeColor = System.Drawing.Color.White;
-            this.btGuardar.Location = new System.Drawing.Point(728, 77);
+            this.btGuardar.Location = new System.Drawing.Point(778, 78);
             this.btGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btGuardar.Name = "btGuardar";
-            this.btGuardar.Size = new System.Drawing.Size(147, 52);
+            this.btGuardar.Size = new System.Drawing.Size(112, 52);
             this.btGuardar.TabIndex = 61;
             this.btGuardar.Text = "GUARDAR";
             this.btGuardar.UseVisualStyleBackColor = false;
@@ -91,6 +98,8 @@ namespace Nomina
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.label6.Location = new System.Drawing.Point(404, 176);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
@@ -101,6 +110,8 @@ namespace Nomina
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.label5.Location = new System.Drawing.Point(5, 127);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
@@ -111,6 +122,8 @@ namespace Nomina
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.label4.Location = new System.Drawing.Point(464, 78);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -121,6 +134,8 @@ namespace Nomina
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.label3.Location = new System.Drawing.Point(476, 126);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -131,7 +146,9 @@ namespace Nomina
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 172);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label2.Location = new System.Drawing.Point(80, 174);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 17);
@@ -141,16 +158,21 @@ namespace Nomina
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label1.Location = new System.Drawing.Point(358, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 17);
+            this.label1.Size = new System.Drawing.Size(231, 34);
             this.label1.TabIndex = 50;
             this.label1.Text = "DEDUCCIONES";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.label7.Location = new System.Drawing.Point(4, 77);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
@@ -161,7 +183,7 @@ namespace Nomina
             // MENU
             // 
             this.MENU.AutoSize = true;
-            this.MENU.Location = new System.Drawing.Point(766, 43);
+            this.MENU.Location = new System.Drawing.Point(827, 14);
             this.MENU.Name = "MENU";
             this.MENU.Size = new System.Drawing.Size(48, 17);
             this.MENU.TabIndex = 69;
@@ -175,10 +197,10 @@ namespace Nomina
             this.button1.BackColor = System.Drawing.Color.Green;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(297, 67);
+            this.button1.Location = new System.Drawing.Point(327, 67);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 36);
+            this.button1.Size = new System.Drawing.Size(93, 36);
             this.button1.TabIndex = 70;
             this.button1.Text = "BUSCAR";
             this.button1.UseVisualStyleBackColor = false;
@@ -236,11 +258,49 @@ namespace Nomina
             this.dataGridView1.TabIndex = 77;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(285, 66);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 37);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 78;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(712, 144);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 79;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(709, 78);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(63, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 80;
+            this.pictureBox3.TabStop = false;
+            // 
             // Deducciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(921, 476);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.TxtTtldeduc);
             this.Controls.Add(this.txtTotalDvg);
@@ -263,6 +323,9 @@ namespace Nomina
             this.Text = "Deducciones";
             this.Load += new System.EventHandler(this.Deducciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,5 +350,8 @@ namespace Nomina
         private System.Windows.Forms.TextBox txtTotalDvg;
         private System.Windows.Forms.TextBox TxtTtldeduc;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
