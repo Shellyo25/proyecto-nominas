@@ -59,10 +59,10 @@ namespace Nomina
             this.btActualizar = new System.Windows.Forms.Button();
             this.btEliminar = new System.Windows.Forms.Button();
             this.MENU = new System.Windows.Forms.LinkLabel();
-            this.empleadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.empleadosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.txtCodUsuario = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.empleadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.empleadosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadosBindingSource1)).BeginInit();
@@ -260,9 +260,11 @@ namespace Nomina
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label12.Location = new System.Drawing.Point(478, 9);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(168, 17);
+            this.label12.Size = new System.Drawing.Size(236, 23);
             this.label12.TabIndex = 24;
             this.label12.Text = "INGRESAR EMPLEADOS";
             // 
@@ -324,6 +326,7 @@ namespace Nomina
             // MENU
             // 
             this.MENU.AutoSize = true;
+            this.MENU.LinkColor = System.Drawing.Color.White;
             this.MENU.Location = new System.Drawing.Point(1046, 20);
             this.MENU.Name = "MENU";
             this.MENU.Size = new System.Drawing.Size(48, 17);
@@ -332,15 +335,6 @@ namespace Nomina
             this.MENU.Text = "MENU";
             this.MENU.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MENU.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.MENU_LinkClicked_1);
-            // 
-            // empleadosBindingSource
-            // 
-            this.empleadosBindingSource.DataSource = typeof(Nomina.Empleados);
-            // 
-            // empleadosBindingSource1
-            // 
-            this.empleadosBindingSource1.DataSource = typeof(Nomina.Empleados);
-            this.empleadosBindingSource1.CurrentChanged += new System.EventHandler(this.empleadosBindingSource1_CurrentChanged);
             // 
             // txtCodUsuario
             // 
@@ -358,10 +352,20 @@ namespace Nomina
             this.label14.TabIndex = 34;
             this.label14.Text = "Codigo Usuario:";
             // 
+            // empleadosBindingSource
+            // 
+            this.empleadosBindingSource.DataSource = typeof(Nomina.Empleados);
+            // 
+            // empleadosBindingSource1
+            // 
+            this.empleadosBindingSource1.DataSource = typeof(Nomina.Empleados);
+            this.empleadosBindingSource1.CurrentChanged += new System.EventHandler(this.empleadosBindingSource1_CurrentChanged);
+            // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(1179, 549);
             this.Controls.Add(this.txtCodUsuario);
             this.Controls.Add(this.label14);

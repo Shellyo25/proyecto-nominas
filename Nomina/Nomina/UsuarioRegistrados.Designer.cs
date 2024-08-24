@@ -29,6 +29,7 @@ namespace Nomina
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioRegistrados));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MENU = new System.Windows.Forms.LinkLabel();
@@ -38,10 +39,12 @@ namespace Nomina
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(308, 22);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(218, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 20);
+            this.label1.Size = new System.Drawing.Size(373, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuarios Registrados";
             // 
@@ -59,6 +62,8 @@ namespace Nomina
             // MENU
             // 
             this.MENU.AutoSize = true;
+            this.MENU.BackColor = System.Drawing.Color.Transparent;
+            this.MENU.LinkColor = System.Drawing.Color.White;
             this.MENU.Location = new System.Drawing.Point(712, 25);
             this.MENU.Name = "MENU";
             this.MENU.Size = new System.Drawing.Size(48, 17);
@@ -72,6 +77,7 @@ namespace Nomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 366);
             this.Controls.Add(this.MENU);
             this.Controls.Add(this.dataGridView1);

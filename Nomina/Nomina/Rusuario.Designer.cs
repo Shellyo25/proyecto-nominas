@@ -43,13 +43,17 @@ namespace Nomina
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.MENU = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(263, 265);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(90, 255);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 25);
             this.label1.TabIndex = 0;
@@ -59,8 +63,10 @@ namespace Nomina
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(265, 119);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(90, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 25);
             this.label2.TabIndex = 1;
@@ -77,8 +83,10 @@ namespace Nomina
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(230, 164);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Location = new System.Drawing.Point(90, 164);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 25);
             this.label5.TabIndex = 4;
@@ -94,21 +102,21 @@ namespace Nomina
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(363, 269);
+            this.txtNombre.Location = new System.Drawing.Point(327, 258);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(187, 22);
             this.txtNombre.TabIndex = 8;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(363, 123);
+            this.txtUsuario.Location = new System.Drawing.Point(327, 123);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(187, 22);
             this.txtUsuario.TabIndex = 11;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(363, 168);
+            this.txtPassword.Location = new System.Drawing.Point(327, 168);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(187, 22);
@@ -117,8 +125,10 @@ namespace Nomina
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(140, 208);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(90, 208);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(210, 25);
             this.label6.TabIndex = 14;
@@ -127,7 +137,7 @@ namespace Nomina
             // 
             // txtConPassword
             // 
-            this.txtConPassword.Location = new System.Drawing.Point(363, 212);
+            this.txtConPassword.Location = new System.Drawing.Point(327, 212);
             this.txtConPassword.Name = "txtConPassword";
             this.txtConPassword.PasswordChar = '*';
             this.txtConPassword.Size = new System.Drawing.Size(187, 22);
@@ -136,9 +146,9 @@ namespace Nomina
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(363, 319);
+            this.btnRegistrar.Location = new System.Drawing.Point(349, 320);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(180, 59);
+            this.btnRegistrar.Size = new System.Drawing.Size(144, 47);
             this.btnRegistrar.TabIndex = 16;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -147,8 +157,10 @@ namespace Nomina
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(139, 32);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(77, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(581, 36);
             this.label3.TabIndex = 17;
@@ -158,7 +170,10 @@ namespace Nomina
             // MENU
             // 
             this.MENU.AutoSize = true;
-            this.MENU.Location = new System.Drawing.Point(745, 19);
+            this.MENU.BackColor = System.Drawing.Color.Transparent;
+            this.MENU.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.MENU.LinkColor = System.Drawing.Color.White;
+            this.MENU.Location = new System.Drawing.Point(688, 9);
             this.MENU.Name = "MENU";
             this.MENU.Size = new System.Drawing.Size(48, 17);
             this.MENU.TabIndex = 32;
@@ -167,12 +182,25 @@ namespace Nomina
             this.MENU.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MENU.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.MENU_LinkClicked);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(565, 145);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(110, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(825, 417);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(748, 417);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.MENU);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnRegistrar);
@@ -190,6 +218,7 @@ namespace Nomina
             this.Name = "frmRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Usuario";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,5 +239,6 @@ namespace Nomina
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel MENU;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -53,6 +53,11 @@ namespace Nomina
                 else
                 {
                     MessageBox.Show("Usuario registrado con éxito","Aviso",MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtUsuario.Clear();
+                    txtPassword.Clear();
+                    txtConPassword.Clear();
+                    txtNombre.Clear();
                 }
             } catch (Exception ex)
             {

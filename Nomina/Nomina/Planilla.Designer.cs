@@ -76,10 +76,10 @@ namespace Nomina
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(381, 25);
+            this.label1.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(224, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(423, 20);
+            this.label1.Size = new System.Drawing.Size(709, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "PLANILLA DE SUELDOS DE LOS EMPLEADOS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -423,7 +423,8 @@ namespace Nomina
             // MENU
             // 
             this.MENU.AutoSize = true;
-            this.MENU.Location = new System.Drawing.Point(1110, 60);
+            this.MENU.LinkColor = System.Drawing.Color.White;
+            this.MENU.Location = new System.Drawing.Point(1263, 22);
             this.MENU.Name = "MENU";
             this.MENU.Size = new System.Drawing.Size(48, 17);
             this.MENU.TabIndex = 80;
@@ -452,6 +453,7 @@ namespace Nomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(1367, 669);
             this.Controls.Add(this.txtCodPlanilla);
             this.Controls.Add(this.label19);
